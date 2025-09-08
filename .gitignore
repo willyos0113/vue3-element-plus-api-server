@@ -4,6 +4,18 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Security and sensitive files ###
+*.pem
+*.key
+.env
+.env.local
+
+### Log files ###
+*.log
+*.log.*
+*.gz
+logs/
+
 ### STS ###
 .apt_generated
 .classpath
