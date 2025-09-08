@@ -18,7 +18,7 @@ import tw.idv.yiwei.user.entity.RegisterDto;
 @RequestMapping("api/users/register")
 public class RegisterController {
 
-	@PostMapping(value = "")
+	@PostMapping
 	public ResponseEntity<?> register(@Valid @RequestBody RegisterDto registerDto, BindingResult bindingResult) {
 		// 表單驗證錯誤處理
 		if (bindingResult.hasErrors()) {
