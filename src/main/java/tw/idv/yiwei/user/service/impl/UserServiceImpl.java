@@ -64,7 +64,7 @@ public class UserServiceImpl implements UserService {
 		// 取得 jwt 過期時間
 		long expireInSeconds = jwtUtil.getExpireTime() / 1000;
 
-		// 將使用者資料和 jwt token 回傳至服務層
+		// 將使用者資料和 jwt token 回傳至控制器層
 		return Map.of("token", jwtToken, "users", queryUsers, "expiresIn", expireInSeconds);
 	}
 

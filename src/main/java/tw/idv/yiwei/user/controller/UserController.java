@@ -70,16 +70,10 @@ public class UserController {
 			var usersAndToken = service.login(loginDto);
 			var users = (Users) usersAndToken.get("users");
 			// (1) 登入成功
-			return ResponseEntity.status(200).body(Map.of(
-					"success", true, 
-					"message", "登入成功", 
-					"token", usersAndToken.get("token"),
-					"expiresIn", usersAndToken.get("expiresIn"),
-					"users", Map.of(
-							"id", users.getId(),
-		                    "name", users.getName()
-							)
-					));
+			return ResponseEntity.status(200)
+					.body(Map.of("success", true, "message", "登入成功", "token", usersAndToken.get("token"), "expiresIn",
+							usersAndToken.get("expiresIn"), "users",
+							Map.of("id", users.getId(), "name", users.getName())));
 		} catch (BusinessException e) {
 			// (2) 查無使用者或密碼例外發生
 			return ResponseEntity.status(401).body(Map.of("success", false, "message", e.getMessage()));
