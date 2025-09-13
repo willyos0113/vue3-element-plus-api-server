@@ -28,4 +28,6 @@ public class RegisterDto {
 		// 任一條件不滿足，則回傳 false 觸發註解訊息
 		return password != null && password.equals(password2);
 	}
+	
+	private String identity;
 }
