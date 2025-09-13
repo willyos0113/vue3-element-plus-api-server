@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@Transactional
 	public Users register(RegisterDto registerDto) {
-		// 檢查 name 和 email 是否重複
+		// (1) 檢查 name 和 email 是否重複
 		String inputName = registerDto.getName();
 		String inputEmail = registerDto.getEmail();
 		if (repo.existsByName(inputName)) {
@@ -35,36 +35,36 @@ public class UserServiceImpl implements UserService {
 			throw new BusinessException("信箱地址重複");
 		}
 
-		// 密碼加密(先不做...)
+		// (2) 密碼加密(先不做...)
 		// ...
 
-		// 建立 Users 實體 (id, updateTime 交由 SQL 處理)
+		// (3) 建立 Users 實體 (id, updateTime 交由 SQL 處理)
 		var saveUsers = new Users();
 		saveUsers.setName(registerDto.getName());
 		saveUsers.setEmail(registerDto.getEmail());
 		saveUsers.setPassword(registerDto.getPassword());
 		saveUsers.setIdentity(registerDto.getIdentity());
 
-		// 儲存使用者
+		// (4) 儲存使用者
 		return repo.save(saveUsers);
 	}
 
 	@Override
 	@Transactional
 	public Map<String, Object> login(LoginDto loginDto) {
-		// 查無使用者或密碼
+		// (1) 查無使用者或密碼
 		var queryUsers = repo.findByName(loginDto.getName());
 		if (queryUsers == null || !queryUsers.getPassword().equals(loginDto.getPassword())) {
 			throw new BusinessException("密碼或使用者錯誤");
 		}
 
-		// 生成 jwt token
+		// (2) 生成 jwt token
 		String jwtToken = jwtUtil.createJWT(queryUsers.getId(), queryUsers.getId(), null);
 
-		// 取得 jwt 過期時間
+		// (3) 取得 jwt 過期時間
 		long expireInSeconds = jwtUtil.getExpireTime() / 1000;
 
-		// 將使用者資料和 jwt token 回傳至控制器層
+		// (4) 將使用者和 jwt token 回傳至控制器層
 		return Map.of("token", jwtToken, "users", queryUsers, "expiresIn", expireInSeconds);
 	}
 

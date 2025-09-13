@@ -21,7 +21,7 @@ public class JwtUtil {
 	// 過期時間 - 定義了 jwt 的有效期限為 15 分鐘
 	@Value("${jwt.expire-time}")
 	private long expireTime;
-	
+
 	/**
 	 * 創建 jwt token 方法
 	 * 
@@ -87,16 +87,17 @@ public class JwtUtil {
 	public String getUserIdFromToken(String token) {
 		// (1) 設定密鑰，驗證完整性、過期時間及格式，並只取出 payload 的部分
 		Claims claims = Jwts.parserBuilder().setSigningKey(generateKey()).build().parseClaimsJws(token).getBody();
-		
+
 		// (2) 從 payload 中再取出主旨部分並回傳
 		return claims.getSubject();
 	}
-	
+
 	/**
 	 * 取得 jwt 過期時間 (毫秒)
+	 * 
 	 * @return JWT 的過期時間，單位為毫秒
 	 */
 	public long getExpireTime() {
-	    return expireTime;
+		return expireTime;
 	}
 }
