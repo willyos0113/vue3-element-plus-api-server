@@ -1,5 +1,7 @@
 package tw.idv.yiwei.user.service.impl;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,12 +12,15 @@ import tw.idv.yiwei.user.entity.RegisterDto;
 import tw.idv.yiwei.user.entity.Users;
 import tw.idv.yiwei.user.service.UserService;
 import tw.idv.yiwei.utils.BusinessException;
+import tw.idv.yiwei.utils.JwtUtil;
 
 @Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UsersRepository repo;
+	@Autowired
+	private JwtUtil jwtUtil;
 
 	@Override
 	@Transactional
@@ -40,22 +45,27 @@ public class UserServiceImpl implements UserService {
 		saveUsers.setPassword(registerDto.getPassword());
 		saveUsers.setIdentity(registerDto.getIdentity());
 
-		// 儲存用戶
+		// 儲存使用者
 		return repo.save(saveUsers);
 	}
 
 	@Override
 	@Transactional
-	public Users login(LoginDto loginDto) {
+	public Map<String, Object> login(LoginDto loginDto) {
 		// 查無使用者或密碼
 		var queryUsers = repo.findByName(loginDto.getName());
 		if (queryUsers == null || !queryUsers.getPassword().equals(loginDto.getPassword())) {
 			throw new BusinessException("密碼或使用者錯誤");
 		}
 
-		// 傳送 webToken(先不處理...)
+		// 生成 jwt token
+		String jwtToken = jwtUtil.createJWT(queryUsers.getId(), queryUsers.getId(), null);
 
-		return queryUsers;
+		// 取得 jwt 過期時間
+		long expireInSeconds = jwtUtil.getExpireTime() / 1000;
+
+		// 將使用者資料和 jwt token 回傳至服務層
+		return Map.of("token", jwtToken, "users", queryUsers, "expiresIn", expireInSeconds);
 	}
 
 }
