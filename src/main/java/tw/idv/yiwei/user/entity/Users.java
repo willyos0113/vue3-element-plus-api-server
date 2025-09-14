@@ -2,6 +2,8 @@ package tw.idv.yiwei.user.entity;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.UpdateTimestamp;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -32,6 +34,7 @@ public class Users {
 	@Column(name = "identity")
 	private String identity;
 
+	@UpdateTimestamp
 	@Column(name = "update_time")
 	private LocalDateTime updateTime;
 

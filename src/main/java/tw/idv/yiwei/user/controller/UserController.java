@@ -42,8 +42,8 @@ public class UserController {
 		try {
 			var saveUsers = service.register(registerDto);
 			// a. 註冊成功
-			return ResponseEntity.status(201)
-					.body(Map.of("success", true, "message", "註冊成功", "userId", saveUsers.getId()));
+			return ResponseEntity.status(201).body(Map.of("success", true, "message", "註冊成功", "id", saveUsers.getId(),
+					"name", saveUsers.getName(), "updateTime", saveUsers.getUpdateTime()));
 		} catch (BusinessException e) {
 			// b. 重複 email 或重複 name 例外發生
 			return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));

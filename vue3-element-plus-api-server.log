@@ -385,3 +385,569 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2025-09-14 01:06:28.307 [INFO] [Thread-27] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-14 01:06:28.307 [INFO] [Thread-27] [349] HikariPool-7 - Shutdown initiated...
 2025-09-14 01:06:28.309 [INFO] [Thread-27] [351] HikariPool-7 - Shutdown completed.
+2025-09-14 13:43:14.787 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34623 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:43:14.788 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:43:14.788 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:43:14.803 [INFO] [restartedMain] [68] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-14 13:43:14.803 [INFO] [restartedMain] [68] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-14 13:43:15.057 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:43:15.073 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-09-14 13:43:15.222 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:43:15.228 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:43:15.229 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:43:15.242 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:43:15.242 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 438 ms
+2025-09-14 13:43:15.287 [INFO] [restartedMain] [109] HikariPool-1 - Starting...
+2025-09-14 13:43:15.432 [INFO] [restartedMain] [580] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@734dae7a
+2025-09-14 13:43:15.433 [INFO] [restartedMain] [122] HikariPool-1 - Start completed.
+2025-09-14 13:43:15.447 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:43:15.470 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-14 13:43:15.482 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:43:15.574 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:43:15.618 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:43:15.623 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:43:15.878 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:43:15.879 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:43:16.035 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:43:16.043 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:43:16.166 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:43:16.179 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:43:16.184 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 1.519 seconds (process running for 1.774)
+2025-09-14 13:43:21.140 [INFO] [http-nio-8080-exec-1] [168] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 13:43:21.140 [INFO] [http-nio-8080-exec-1] [532] Initializing Servlet 'dispatcherServlet'
+2025-09-14 13:43:21.142 [INFO] [http-nio-8080-exec-1] [554] Completed initialization in 1 ms
+2025-09-14 13:45:48.086 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:45:48.101 [INFO] [Thread-5] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:45:48.106 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:45:48.119 [INFO] [Thread-5] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:45:48.134 [INFO] [Thread-5] [349] HikariPool-1 - Shutdown initiated...
+2025-09-14 13:45:48.141 [INFO] [Thread-5] [351] HikariPool-1 - Shutdown completed.
+2025-09-14 13:45:48.201 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34623 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:45:48.201 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:45:48.201 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:45:48.290 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:45:48.292 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:45:48.324 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:45:48.325 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:45:48.325 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:45:48.329 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:45:48.329 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 126 ms
+2025-09-14 13:45:48.341 [INFO] [restartedMain] [109] HikariPool-2 - Starting...
+2025-09-14 13:45:48.388 [INFO] [restartedMain] [580] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60cea0c6
+2025-09-14 13:45:48.392 [INFO] [restartedMain] [122] HikariPool-2 - Start completed.
+2025-09-14 13:45:48.395 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:45:48.396 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:45:48.401 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:45:48.404 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:45:48.404 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:45:48.423 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:45:48.424 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:45:48.457 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:45:48.460 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:45:48.499 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:45:48.504 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:45:48.506 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.319 seconds (process running for 154.097)
+2025-09-14 13:45:48.507 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:46:00.014 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:46:00.016 [INFO] [Thread-7] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:46:00.018 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:46:00.020 [INFO] [Thread-7] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:46:00.020 [INFO] [Thread-7] [349] HikariPool-2 - Shutdown initiated...
+2025-09-14 13:46:00.023 [INFO] [Thread-7] [351] HikariPool-2 - Shutdown completed.
+2025-09-14 13:46:00.062 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34623 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:46:00.062 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:46:00.062 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:46:00.113 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:46:00.115 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:46:00.147 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:46:00.147 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:46:00.147 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:46:00.152 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:46:00.152 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 89 ms
+2025-09-14 13:46:00.166 [INFO] [restartedMain] [109] HikariPool-3 - Starting...
+2025-09-14 13:46:00.181 [INFO] [restartedMain] [580] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@585e0e8b
+2025-09-14 13:46:00.181 [INFO] [restartedMain] [122] HikariPool-3 - Start completed.
+2025-09-14 13:46:00.181 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:46:00.182 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:46:00.185 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:46:00.186 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:46:00.186 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:46:00.199 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:46:00.199 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:46:00.227 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:46:00.230 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:46:00.267 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:46:00.271 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:46:00.273 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.22 seconds (process running for 165.864)
+2025-09-14 13:46:00.274 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:46:18.851 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:46:18.854 [INFO] [Thread-11] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:46:18.858 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:46:18.861 [INFO] [Thread-11] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:46:18.862 [INFO] [Thread-11] [349] HikariPool-3 - Shutdown initiated...
+2025-09-14 13:46:18.866 [INFO] [Thread-11] [351] HikariPool-3 - Shutdown completed.
+2025-09-14 13:46:18.903 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34623 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:46:18.903 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:46:18.903 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:46:18.959 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:46:18.962 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:46:18.995 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:46:18.995 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:46:18.995 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:46:19.000 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:46:19.000 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 96 ms
+2025-09-14 13:46:19.014 [INFO] [restartedMain] [109] HikariPool-4 - Starting...
+2025-09-14 13:46:19.032 [INFO] [restartedMain] [580] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@376909a
+2025-09-14 13:46:19.033 [INFO] [restartedMain] [122] HikariPool-4 - Start completed.
+2025-09-14 13:46:19.033 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:46:19.034 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:46:19.036 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:46:19.037 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:46:19.038 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:46:19.050 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:46:19.050 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:46:19.079 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:46:19.082 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:46:19.117 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:46:19.122 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:46:19.124 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.231 seconds (process running for 184.714)
+2025-09-14 13:46:19.124 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:46:27.248 [INFO] [http-nio-8080-exec-2] [168] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 13:46:27.249 [INFO] [http-nio-8080-exec-2] [532] Initializing Servlet 'dispatcherServlet'
+2025-09-14 13:46:27.250 [INFO] [http-nio-8080-exec-2] [554] Completed initialization in 1 ms
+2025-09-14 13:47:27.172 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:47:27.181 [INFO] [Thread-15] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:47:27.185 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:47:27.189 [INFO] [Thread-15] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:47:27.191 [INFO] [Thread-15] [349] HikariPool-4 - Shutdown initiated...
+2025-09-14 13:47:27.198 [INFO] [Thread-15] [351] HikariPool-4 - Shutdown completed.
+2025-09-14 13:47:27.261 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34623 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:47:27.261 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:47:27.261 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:47:27.329 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:47:27.332 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:47:27.362 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:47:27.362 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:47:27.362 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:47:27.367 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:47:27.367 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 105 ms
+2025-09-14 13:47:27.381 [INFO] [restartedMain] [109] HikariPool-5 - Starting...
+2025-09-14 13:47:27.399 [INFO] [restartedMain] [580] HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49be8d90
+2025-09-14 13:47:27.399 [INFO] [restartedMain] [122] HikariPool-5 - Start completed.
+2025-09-14 13:47:27.400 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:47:27.400 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:47:27.404 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:47:27.406 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:47:27.406 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:47:27.420 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:47:27.420 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:47:27.448 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:47:27.451 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:47:27.486 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:47:27.491 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:47:27.493 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.241 seconds (process running for 253.084)
+2025-09-14 13:47:27.494 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:47:34.212 [INFO] [RMI TCP Connection(18)-127.0.0.1] [159] Application shutdown requested.
+2025-09-14 13:47:34.213 [INFO] [RMI TCP Connection(18)-127.0.0.1] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:47:34.214 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:47:34.215 [INFO] [RMI TCP Connection(18)-127.0.0.1] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:47:34.215 [INFO] [RMI TCP Connection(18)-127.0.0.1] [349] HikariPool-5 - Shutdown initiated...
+2025-09-14 13:47:34.218 [INFO] [RMI TCP Connection(18)-127.0.0.1] [351] HikariPool-5 - Shutdown completed.
+2025-09-14 13:55:47.795 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34742 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:55:47.796 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:55:47.796 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:55:47.810 [INFO] [restartedMain] [68] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-14 13:55:47.810 [INFO] [restartedMain] [68] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-14 13:55:48.033 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:55:48.049 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2025-09-14 13:55:48.191 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:55:48.196 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:55:48.196 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:55:48.209 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:55:48.209 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 399 ms
+2025-09-14 13:55:48.253 [INFO] [restartedMain] [109] HikariPool-1 - Starting...
+2025-09-14 13:55:48.390 [INFO] [restartedMain] [580] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36372d97
+2025-09-14 13:55:48.391 [INFO] [restartedMain] [122] HikariPool-1 - Start completed.
+2025-09-14 13:55:48.403 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:55:48.420 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-14 13:55:48.429 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:55:48.507 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:55:48.536 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:55:48.540 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:55:48.580 [ERROR] [restartedMain] [436] Failed to initialize JPA EntityManagerFactory: Property 'tw.idv.yiwei.user.entity.Users.updateTime' has multiple '@ValueGenerationType' annotations
+2025-09-14 13:55:48.581 [WARN] [restartedMain] [635] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'tw.idv.yiwei.user.entity.Users.updateTime' has multiple '@ValueGenerationType' annotations
+2025-09-14 13:55:48.581 [INFO] [restartedMain] [349] HikariPool-1 - Shutdown initiated...
+2025-09-14 13:55:48.593 [INFO] [restartedMain] [351] HikariPool-1 - Shutdown completed.
+2025-09-14 13:55:48.594 [INFO] [restartedMain] [168] Stopping service [Tomcat]
+2025-09-14 13:55:48.599 [INFO] [restartedMain] [82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-14 13:55:48.605 [ERROR] [restartedMain] [857] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'tw.idv.yiwei.user.entity.Users.updateTime' has multiple '@ValueGenerationType' annotations
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at tw.idv.yiwei.Vue3ElementPlusApiServerApplication.main(Vue3ElementPlusApiServerApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Property 'tw.idv.yiwei.user.entity.Users.updateTime' has multiple '@ValueGenerationType' annotations
+	at org.hibernate.boot.model.internal.PropertyBinder.getValueGenerationFromAnnotations(PropertyBinder.java:450)
+	at org.hibernate.boot.model.internal.PropertyBinder.handleValueGeneration(PropertyBinder.java:437)
+	at org.hibernate.boot.model.internal.PropertyBinder.makeProperty(PropertyBinder.java:425)
+	at org.hibernate.boot.model.internal.PropertyBinder.makePropertyAndValue(PropertyBinder.java:282)
+	at org.hibernate.boot.model.internal.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:311)
+	at org.hibernate.boot.model.internal.PropertyBinder.createBasicBinder(PropertyBinder.java:1251)
+	at org.hibernate.boot.model.internal.PropertyBinder.bindBasic(PropertyBinder.java:1141)
+	at org.hibernate.boot.model.internal.PropertyBinder.bindProperty(PropertyBinder.java:913)
+	at org.hibernate.boot.model.internal.PropertyBinder.buildProperty(PropertyBinder.java:811)
+	at org.hibernate.boot.model.internal.PropertyBinder.processElementAnnotations(PropertyBinder.java:732)
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1088)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:404)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:266)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 18 common frames omitted
+2025-09-14 13:56:42.540 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:56:42.540 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:56:42.540 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:56:42.553 [INFO] [restartedMain] [68] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-14 13:56:42.554 [INFO] [restartedMain] [68] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-14 13:56:42.776 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:56:42.791 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-09-14 13:56:42.931 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:56:42.937 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:56:42.937 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:56:42.950 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:56:42.950 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 396 ms
+2025-09-14 13:56:42.995 [INFO] [restartedMain] [109] HikariPool-1 - Starting...
+2025-09-14 13:56:43.132 [INFO] [restartedMain] [580] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16d9a835
+2025-09-14 13:56:43.133 [INFO] [restartedMain] [122] HikariPool-1 - Start completed.
+2025-09-14 13:56:43.147 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:56:43.166 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-14 13:56:43.176 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:56:43.252 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:56:43.281 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:56:43.285 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:56:43.531 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:56:43.532 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:56:43.681 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:56:43.690 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:56:43.812 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:56:43.825 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:56:43.829 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 1.402 seconds (process running for 1.616)
+2025-09-14 13:56:58.748 [INFO] [http-nio-8080-exec-1] [168] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 13:56:58.748 [INFO] [http-nio-8080-exec-1] [532] Initializing Servlet 'dispatcherServlet'
+2025-09-14 13:56:58.749 [INFO] [http-nio-8080-exec-1] [554] Completed initialization in 1 ms
+2025-09-14 13:57:34.702 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:57:34.706 [INFO] [Thread-5] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:57:34.708 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:57:34.711 [INFO] [Thread-5] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:34.713 [INFO] [Thread-5] [349] HikariPool-1 - Shutdown initiated...
+2025-09-14 13:57:34.718 [INFO] [Thread-5] [351] HikariPool-1 - Shutdown completed.
+2025-09-14 13:57:34.757 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:57:34.758 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:57:34.758 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:57:34.817 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:57:34.820 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:57:34.853 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:57:34.853 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:57:34.853 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:57:34.857 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:57:34.857 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 99 ms
+2025-09-14 13:57:34.869 [INFO] [restartedMain] [109] HikariPool-2 - Starting...
+2025-09-14 13:57:34.888 [INFO] [restartedMain] [580] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31fd280a
+2025-09-14 13:57:34.888 [INFO] [restartedMain] [122] HikariPool-2 - Start completed.
+2025-09-14 13:57:34.889 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:57:34.890 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:57:34.893 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:57:34.894 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:57:34.894 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:57:34.909 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:57:34.909 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:34.949 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:57:34.952 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:57:34.990 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:57:34.995 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:57:34.997 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.25 seconds (process running for 52.784)
+2025-09-14 13:57:34.997 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:57:43.472 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:57:43.482 [INFO] [Thread-7] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:57:43.487 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:57:43.489 [INFO] [Thread-7] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:43.490 [INFO] [Thread-7] [349] HikariPool-2 - Shutdown initiated...
+2025-09-14 13:57:43.494 [INFO] [Thread-7] [351] HikariPool-2 - Shutdown completed.
+2025-09-14 13:57:43.535 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:57:43.535 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:57:43.535 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:57:43.586 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:57:43.589 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:57:43.616 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:57:43.616 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:57:43.616 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:57:43.620 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:57:43.620 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 84 ms
+2025-09-14 13:57:43.631 [INFO] [restartedMain] [109] HikariPool-3 - Starting...
+2025-09-14 13:57:43.648 [INFO] [restartedMain] [580] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66ba63d
+2025-09-14 13:57:43.648 [INFO] [restartedMain] [122] HikariPool-3 - Start completed.
+2025-09-14 13:57:43.648 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:57:43.649 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:57:43.651 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:57:43.653 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:57:43.653 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:57:43.665 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:57:43.665 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:43.698 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:57:43.701 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:57:43.735 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:57:43.740 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:57:43.742 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.216 seconds (process running for 61.529)
+2025-09-14 13:57:43.742 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:57:50.203 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:57:50.203 [INFO] [Thread-11] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:57:50.204 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:57:50.206 [INFO] [Thread-11] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:50.206 [INFO] [Thread-11] [349] HikariPool-3 - Shutdown initiated...
+2025-09-14 13:57:50.208 [INFO] [Thread-11] [351] HikariPool-3 - Shutdown completed.
+2025-09-14 13:57:50.238 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:57:50.239 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:57:50.239 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:57:50.282 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:57:50.285 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2025-09-14 13:57:50.311 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:57:50.311 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:57:50.311 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:57:50.314 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:57:50.315 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 76 ms
+2025-09-14 13:57:50.325 [INFO] [restartedMain] [109] HikariPool-4 - Starting...
+2025-09-14 13:57:50.338 [INFO] [restartedMain] [580] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c80a739
+2025-09-14 13:57:50.338 [INFO] [restartedMain] [122] HikariPool-4 - Start completed.
+2025-09-14 13:57:50.339 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:57:50.339 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:57:50.341 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:57:50.342 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:57:50.343 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:57:50.353 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:57:50.354 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:50.386 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:57:50.389 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:57:50.421 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:57:50.426 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:57:50.428 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.198 seconds (process running for 68.215)
+2025-09-14 13:57:50.429 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:57:53.850 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:57:53.853 [INFO] [Thread-15] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:57:53.856 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:57:53.858 [INFO] [Thread-15] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:53.860 [INFO] [Thread-15] [349] HikariPool-4 - Shutdown initiated...
+2025-09-14 13:57:53.864 [INFO] [Thread-15] [351] HikariPool-4 - Shutdown completed.
+2025-09-14 13:57:53.901 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:57:53.901 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:57:53.901 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:57:53.951 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:57:53.954 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 13:57:53.980 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:57:53.981 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:57:53.981 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:57:53.984 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:57:53.984 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 82 ms
+2025-09-14 13:57:53.994 [INFO] [restartedMain] [109] HikariPool-5 - Starting...
+2025-09-14 13:57:54.008 [INFO] [restartedMain] [580] HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2933cded
+2025-09-14 13:57:54.008 [INFO] [restartedMain] [122] HikariPool-5 - Start completed.
+2025-09-14 13:57:54.008 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:57:54.009 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:57:54.011 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:57:54.012 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:57:54.012 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:57:54.024 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:57:54.024 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:54.057 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:57:54.060 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:57:54.093 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:57:54.097 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:57:54.099 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.207 seconds (process running for 71.886)
+2025-09-14 13:57:54.099 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:57:56.521 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 13:57:56.523 [INFO] [Thread-19] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:57:56.526 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 13:57:56.528 [INFO] [Thread-19] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:56.529 [INFO] [Thread-19] [349] HikariPool-5 - Shutdown initiated...
+2025-09-14 13:57:56.533 [INFO] [Thread-19] [351] HikariPool-5 - Shutdown completed.
+2025-09-14 13:57:56.576 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 13:57:56.577 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 13:57:56.577 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:57:56.624 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 13:57:56.626 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2025-09-14 13:57:56.651 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 13:57:56.651 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 13:57:56.651 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 13:57:56.655 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 13:57:56.655 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 78 ms
+2025-09-14 13:57:56.665 [INFO] [restartedMain] [109] HikariPool-6 - Starting...
+2025-09-14 13:57:56.679 [INFO] [restartedMain] [580] HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c2d6d00
+2025-09-14 13:57:56.679 [INFO] [restartedMain] [122] HikariPool-6 - Start completed.
+2025-09-14 13:57:56.679 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 13:57:56.680 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 13:57:56.682 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 13:57:56.684 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 13:57:56.684 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 13:57:56.695 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 13:57:56.695 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 13:57:56.727 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 13:57:56.730 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 13:57:56.764 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 13:57:56.768 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 13:57:56.770 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.203 seconds (process running for 74.557)
+2025-09-14 13:57:56.770 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 13:58:08.030 [INFO] [http-nio-8080-exec-2] [168] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 13:58:08.031 [INFO] [http-nio-8080-exec-2] [532] Initializing Servlet 'dispatcherServlet'
+2025-09-14 13:58:08.032 [INFO] [http-nio-8080-exec-2] [554] Completed initialization in 1 ms
+2025-09-14 14:00:00.401 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-14 14:00:00.404 [INFO] [Thread-23] [54] Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 14:00:00.406 [INFO] [tomcat-shutdown] [76] Graceful shutdown complete
+2025-09-14 14:00:00.407 [INFO] [Thread-23] [660] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 14:00:00.408 [INFO] [Thread-23] [349] HikariPool-6 - Shutdown initiated...
+2025-09-14 14:00:00.412 [INFO] [Thread-23] [351] HikariPool-6 - Shutdown completed.
+2025-09-14 14:00:00.456 [INFO] [restartedMain] [53] Starting Vue3ElementPlusApiServerApplication using Java 21.0.6 with PID 34750 (/Users/yiwei/sts3-workspace/vue3-element-plus-api-server/target/classes started by yiwei in /Users/yiwei/sts3-workspace/vue3-element-plus-api-server)
+2025-09-14 14:00:00.457 [DEBUG] [restartedMain] [54] Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-14 14:00:00.457 [INFO] [restartedMain] [652] No active profile set, falling back to 1 default profile: "default"
+2025-09-14 14:00:00.507 [INFO] [restartedMain] [145] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14 14:00:00.509 [INFO] [restartedMain] [213] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2025-09-14 14:00:00.537 [INFO] [restartedMain] [111] Tomcat initialized with port 8080 (http)
+2025-09-14 14:00:00.537 [INFO] [restartedMain] [168] Starting service [Tomcat]
+2025-09-14 14:00:00.537 [INFO] [restartedMain] [168] Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-14 14:00:00.541 [INFO] [restartedMain] [168] Initializing Spring embedded WebApplicationContext
+2025-09-14 14:00:00.541 [INFO] [restartedMain] [301] Root WebApplicationContext: initialization completed in 84 ms
+2025-09-14 14:00:00.552 [INFO] [restartedMain] [109] HikariPool-7 - Starting...
+2025-09-14 14:00:00.574 [INFO] [restartedMain] [580] HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@98972ae
+2025-09-14 14:00:00.575 [INFO] [restartedMain] [122] HikariPool-7 - Start completed.
+2025-09-14 14:00:00.575 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14 14:00:00.576 [INFO] [restartedMain] [50] HHH000026: Second-level cache disabled
+2025-09-14 14:00:00.578 [INFO] [restartedMain] [87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14 14:00:00.579 [WARN] [restartedMain] [153] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-14 14:00:00.580 [INFO] [restartedMain] [163] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-14 14:00:00.592 [INFO] [restartedMain] [59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14 14:00:00.592 [INFO] [restartedMain] [447] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14 14:00:00.631 [WARN] [restartedMain] [258] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14 14:00:00.634 [INFO] [restartedMain] [59] Adding welcome page: class path resource [static/index.html]
+2025-09-14 14:00:00.667 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2025-09-14 14:00:00.672 [INFO] [restartedMain] [243] Tomcat started on port 8080 (http) with context path '/vue3-element-plus-api-server'
+2025-09-14 14:00:00.674 [INFO] [restartedMain] [59] Started Vue3ElementPlusApiServerApplication in 0.225 seconds (process running for 198.461)
+2025-09-14 14:00:00.674 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2025-09-14 14:05:22.235 [INFO] [http-nio-8080-exec-1] [168] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 14:05:22.237 [INFO] [http-nio-8080-exec-1] [532] Initializing Servlet 'dispatcherServlet'
+2025-09-14 14:05:22.247 [INFO] [http-nio-8080-exec-1] [554] Completed initialization in 9 ms
