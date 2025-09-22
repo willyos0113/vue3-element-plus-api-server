@@ -10,4 +10,6 @@ public interface UserService {
 	public Users register(RegisterRequestDto registerDto);
 	
 	public Map<String, Object> login(LoginRequestDto loginDto);
+	
+	public Users currentUser(String token);
 }

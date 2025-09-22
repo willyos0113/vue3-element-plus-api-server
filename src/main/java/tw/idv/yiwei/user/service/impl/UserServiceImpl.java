@@ -68,4 +68,12 @@ public class UserServiceImpl implements UserService {
 		return Map.of("token", jwtToken, "users", queryUsers, "expiresIn", expireInSeconds);
 	}
 
+	@Override
+	@Transactional
+	public Users currentUser(String token) {
+		// (1) 驗證 token 並查詢使用者 id
+		String userId = jwtUtil.getUserIdFromToken(token);
+		return null;
+	}
+
 }
