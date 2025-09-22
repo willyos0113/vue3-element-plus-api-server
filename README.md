@@ -8,31 +8,35 @@
 
 ## 🚀 API 接口設計
 
-- 數據管理功能
+### 數據管理功能
 
-  - GET /api/profiles
-  - GET /api/profiles/{id}
-  - POST /api/profiles/edit/{id}
-  - POST /api/profiles/add
-  - DELETE /api/profiles/delete/{id}
+  - GET `/api/profiles`
+  - GET `/api/profiles/{id}`
+  - POST `/api/profiles/edit/{id}`
+  - POST `/api/profiles/add`
+  - DELETE `/api/profiles/delete/{id}`
 
-- 註冊登入功能
-  - POST /api/users/register
-  - GET /api/users/current
-  - POST /api/users/login
+### 註冊登入功能
+
+  - POST `/api/users/register`
+  - GET `/api/users/current`
+  - POST `/api/users/login`
 
 ## 📝 資料庫設計
 
-- users
+### `users`
+- 描述使用者資料
 
-  - id: VARCHAR(100), PK
-  - name: VARCHAR(100), UK, NOT NULL
-  - email: VARCHAR(100), UK, NOT NULL
-  - password: VARCHAR(255), NOT NULL
-  - identity: VARCHAR(100)
-  - update_time: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+  - `id`: `VARCHAR(100)`, `PK`
+  - `name`: `VARCHAR(100)`, `UK`, `NOT NULL`
+  - `email`: `VARCHAR(100)`, `UK`, `NOT NULL`
+  - `password`: `VARCHAR(255)`, `NOT NULL`
+  - `identity`: `VARCHAR(100)`
+  - `update_time`: `TIMESTAMP`, `DEFAULT CURRENT_TIMESTAMP`
 
-- profiles
+### `profiles`
+- 描述業務資料
+
   - still under construction...
  
 ## 📋 操作流程
@@ -70,7 +74,7 @@ CREATE TABLE profiles (
 ### 3. 🚀 啟動 Spring Boot
 - 確認 `application.yml` 資料庫連接設定
 - 執行 `./mvnw spring-boot:run`
-- 訪問 http://localhost:8080/swagger-ui.html
+- 訪問 `http://localhost:8080/swagger-ui.html`
 
 ### 4. 📮 Postman 測試順序
 
