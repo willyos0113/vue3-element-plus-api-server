@@ -1,11 +1,11 @@
-package tw.idv.yiwei.user.entity;
+package tw.idv.yiwei.user.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class LoginDto {
+public class LoginRequestDto {
 	@NotBlank(message = "用戶名不得為空")
 	@Size(min = 2, max = 30, message = "長度必須為2~30字元")
 	private String name;

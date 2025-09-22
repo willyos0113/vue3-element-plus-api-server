@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import tw.idv.yiwei.user.dao.UsersRepository;
-import tw.idv.yiwei.user.entity.LoginDto;
-import tw.idv.yiwei.user.entity.RegisterDto;
+import tw.idv.yiwei.user.dto.LoginRequestDto;
+import tw.idv.yiwei.user.dto.RegisterRequestDto;
 import tw.idv.yiwei.user.entity.Users;
 import tw.idv.yiwei.user.service.UserService;
 import tw.idv.yiwei.utils.BusinessException;
@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	@Transactional
-	public Users register(RegisterDto registerDto) {
+	public Users register(RegisterRequestDto registerDto) {
 		// (1) 檢查 name 和 email 是否重複
 		String inputName = registerDto.getName();
 		String inputEmail = registerDto.getEmail();
@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	@Transactional
-	public Map<String, Object> login(LoginDto loginDto) {
+	public Map<String, Object> login(LoginRequestDto loginDto) {
 		// (1) 查無使用者或密碼
 		var queryUsers = repo.findByName(loginDto.getName());
 		if (queryUsers == null || !queryUsers.getPassword().equals(loginDto.getPassword())) {

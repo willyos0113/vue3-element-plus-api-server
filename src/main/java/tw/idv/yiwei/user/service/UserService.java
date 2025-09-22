@@ -2,12 +2,12 @@ package tw.idv.yiwei.user.service;
 
 import java.util.Map;
 
-import tw.idv.yiwei.user.entity.LoginDto;
-import tw.idv.yiwei.user.entity.RegisterDto;
+import tw.idv.yiwei.user.dto.LoginRequestDto;
+import tw.idv.yiwei.user.dto.RegisterRequestDto;
 import tw.idv.yiwei.user.entity.Users;
 
 public interface UserService {
-	public Users register(RegisterDto registerDto);
+	public Users register(RegisterRequestDto registerDto);
 	
-	public Map<String, Object> login(LoginDto loginDto);
+	public Map<String, Object> login(LoginRequestDto loginDto);
 }
