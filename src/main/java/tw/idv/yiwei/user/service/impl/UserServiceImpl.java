@@ -53,7 +53,7 @@ public class UserServiceImpl implements UserService {
 	@Transactional
 	public Map<String, Object> login(LoginRequestDto loginDto) {
 		// (1) 查無使用者或密碼
-		var queryUsers = repo.findByName(loginDto.getName());
+		var queryUsers = repo.findByEmail(loginDto.getEmail());
 		if (queryUsers == null || !queryUsers.getPassword().equals(loginDto.getPassword())) {
 			throw new BusinessException("密碼或使用者錯誤");
 		}

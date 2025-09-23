@@ -20,7 +20,7 @@ public interface UsersRepository extends JpaRepository<Users, String> {
 	public boolean existsByEmail(String email);
 
 	// 自動生成 SQL: SELECT * FROM users WHERE name = ?
-	public Users findByName(String name);
+	public Users findByEmail(String email);
 	
 	// 預設方法 Optional<Users> findById(String id)
 }
