@@ -73,7 +73,15 @@ public class UserServiceImpl implements UserService {
 	public Users currentUser(String token) {
 		// (1) 驗證 token 並查詢使用者 id
 		String userId = jwtUtil.getUserIdFromToken(token);
-		return null;
-	}
+		if (userId == null || userId.isEmpty()) {
+			throw new BusinessException("無法取得使用者 id");
+		}
 
+		// (2) 透過使用者 id，查詢使用者資料(1 row)
+		Users queryUsers = repo.findById(userId).orElse(null);
+		if(queryUsers == null) {
+			throw new BusinessException("找不到使用者資料");
+		}
+		return queryUsers;
+	}
 }

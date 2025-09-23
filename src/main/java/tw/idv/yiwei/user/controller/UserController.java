@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.jsonwebtoken.ExpiredJwtException;
-import io.jsonwebtoken.security.SignatureException;
 import jakarta.validation.Valid;
+import tw.idv.yiwei.user.dto.CurrentResponseDto;
 import tw.idv.yiwei.user.dto.LoginRequestDto;
 import tw.idv.yiwei.user.dto.LoginResponseDto;
 import tw.idv.yiwei.user.dto.RegisterRequestDto;
@@ -26,20 +26,13 @@ import tw.idv.yiwei.user.entity.Users;
 import tw.idv.yiwei.user.service.UserService;
 import tw.idv.yiwei.utils.BusinessException;
 import tw.idv.yiwei.utils.CoreResponseDto;
-import tw.idv.yiwei.utils.JwtUtil;
 
 @RestController
 @RequestMapping("api/users")
 public class UserController {
 
-	private final JwtUtil jwtUtil;
-
 	@Autowired
 	private UserService service;
-
-	UserController(JwtUtil jwtUtil) {
-		this.jwtUtil = jwtUtil;
-	}
 
 	@PostMapping("register")
 	public ResponseEntity<CoreResponseDto<RegisterResponseDto>> register(
@@ -60,15 +53,15 @@ public class UserController {
 
 			// a. 註冊成功
 			var registerResponseDto = RegisterResponseDto.fromEntity(saveUsers);
-			return ResponseEntity.status(201).body(CoreResponseDto.success(registerResponseDto, "註冊成功"));
+			return ResponseEntity.status(HttpStatus.CREATED).body(CoreResponseDto.success(registerResponseDto, "註冊成功"));
 		} catch (BusinessException e) {
 
-			// b. 重複 email 或重複 name 例外發生
+			// b. 重複 email 或重複 name 例外
 			return ResponseEntity.badRequest().body(CoreResponseDto.businessError(e.getMessage()));
 		} catch (Exception e) {
 
-			// c. 其他未預期例外發生
-			return ResponseEntity.status(500).body(CoreResponseDto.systemError());
+			// c. 其他未預期例外
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(CoreResponseDto.systemError());
 		}
 	}
 
@@ -94,48 +87,50 @@ public class UserController {
 			var loginResponseDto = LoginResponseDto.fromEntityWithToken(queryUsers, accessToken, expireTime);
 
 			// a. 登入成功
-			return ResponseEntity.status(200).body(CoreResponseDto.success(loginResponseDto, "登入成功"));
+			return ResponseEntity.status(HttpStatus.OK).body(CoreResponseDto.success(loginResponseDto, "登入成功"));
 		} catch (BusinessException e) {
 
-			// b. 查無使用者或密碼例外發生
-			return ResponseEntity.status(401).body(CoreResponseDto.businessError(e.getMessage()));
+			// b. 查無使用者或密碼例外
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError(e.getMessage()));
 		} catch (Exception e) {
 
-			// c. 其他未預期例外發生
-			return ResponseEntity.status(500).body(CoreResponseDto.systemError());
+			// c. 其他未預期例外
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(CoreResponseDto.systemError());
 		}
 	}
 
 	@GetMapping("current")
-	public ResponseEntity<?> currentUser(@RequestHeader("Authorization") String authorizationHeader) {
+	public ResponseEntity<CoreResponseDto<CurrentResponseDto>> currentUser(
+			@RequestHeader("Authorization") String authorizationHeader) {
 		// (1) header 格式檢查
 		if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("標頭驗證資料不符合格式");
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+					.body(CoreResponseDto.businessError("Header's token 資料格式不符"));
 		}
+
 		// (2) 提取 jwt token
 		String token = authorizationHeader.substring(7);
 
-		// (3) 解析 jwt token
+		// (3) 解析 jwt token 並驗證
 		try {
 			Users queryUsers = service.currentUser(token);
 
-			// a. token 驗證成功
-			return ResponseEntity.status(200).body("成功提取 token");
-		} catch (ExpiredJwtException e) {
+			// a. token 驗證成功，並取得對應的使用者資料
+			var currentResponseDto = CurrentResponseDto.fromEntity(queryUsers);
+			return ResponseEntity.status(HttpStatus.OK)
+					.body(CoreResponseDto.success(currentResponseDto, "token 有效並取得使用者資料"));
 
 			// b. token 逾時失效
-			e.printStackTrace();
-			return null;
-		} catch (SignatureException e) {
+		} catch (ExpiredJwtException e) {
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError("token 逾時失效"));
 
-			// c. token 簽名失效
-			e.printStackTrace();
-			return null;
+			// c. 無法取得使用者 id / 找不到使用者資料
+		} catch (BusinessException e) {
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError(e.getMessage()));
+
+			// d. 其他未預期例外
 		} catch (Exception e) {
-
-			// d. token 驗證或資料抓取失敗
-			e.printStackTrace();
-			return null;
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(CoreResponseDto.systemError());
 		}
 	}
 }
