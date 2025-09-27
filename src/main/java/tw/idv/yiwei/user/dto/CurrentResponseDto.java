@@ -12,12 +12,13 @@ public class CurrentResponseDto {
 	// 使用者基本資料
 	private String id;
 	private String name;
+	private String email;
 	private String identity;
 	private LocalDateTime updateTime;
 
 	// 工廠方法 - 從 Users 實體轉換為安全的回應 DTO (排除敏感資料)
 	public static CurrentResponseDto fromEntity(Users user) {
-		return CurrentResponseDto.builder().id(user.getId()).name(user.getName()).identity(user.getIdentity())
-				.updateTime(user.getUpdateTime()).build();
+		return CurrentResponseDto.builder().id(user.getId()).name(user.getName()).email(user.getEmail())
+				.identity(user.getIdentity()).updateTime(user.getUpdateTime()).build();
 	}
 }

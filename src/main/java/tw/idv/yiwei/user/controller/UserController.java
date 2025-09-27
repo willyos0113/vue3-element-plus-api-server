@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.MalformedJwtException;
 import jakarta.validation.Valid;
 import tw.idv.yiwei.user.dto.CurrentResponseDto;
 import tw.idv.yiwei.user.dto.LoginRequestDto;
@@ -101,7 +102,7 @@ public class UserController {
 
 	@GetMapping("current")
 	public ResponseEntity<CoreResponseDto<CurrentResponseDto>> currentUser(
-			@RequestHeader("Authorization") String authorizationHeader) {
+			@RequestHeader(value = "Authorization", required = false) String authorizationHeader) {
 		// (1) header 格式檢查
 		if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
 			return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
@@ -124,11 +125,15 @@ public class UserController {
 		} catch (ExpiredJwtException e) {
 			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError("token 逾時失效"));
 
-			// c. 無法取得使用者 id / 找不到使用者資料
+			// c. token 格式錯誤
+		} catch (MalformedJwtException e) {
+			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError("token 格式錯誤"));
+
+			// d. 無法取得使用者 id / 找不到使用者資料
 		} catch (BusinessException e) {
 			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(CoreResponseDto.businessError(e.getMessage()));
 
-			// d. 其他未預期例外
+			// e. 其他未預期例外
 		} catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(CoreResponseDto.systemError());
 		}
