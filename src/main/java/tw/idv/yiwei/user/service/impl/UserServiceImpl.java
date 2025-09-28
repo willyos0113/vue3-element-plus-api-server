@@ -59,7 +59,7 @@ public class UserServiceImpl implements UserService {
 		}
 
 		// (2) 生成 jwt token
-		String jwtToken = jwtUtil.createJWT(queryUsers.getId(), queryUsers.getId(), null);
+		String jwtToken = jwtUtil.createJWT(queryUsers, null);
 
 		// (3) 取得 jwt 過期時間
 		long expireInSeconds = jwtUtil.getExpireTime() / 1000;
@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService {
 		// (1) 驗證 token 並查詢使用者 id
 		String userId = jwtUtil.getUserIdFromToken(token);
 		if (userId == null || userId.isEmpty()) {
-			throw new BusinessException("無法取得使用者 id");
+			throw new BusinessException("找不到使用者 id");
 		}
 
 		// (2) 透過使用者 id，查詢使用者資料(1 row)

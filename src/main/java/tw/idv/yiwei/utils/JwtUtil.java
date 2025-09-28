@@ -12,6 +12,7 @@ import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+import tw.idv.yiwei.user.entity.Users;
 
 @Component
 public class JwtUtil {
@@ -25,12 +26,11 @@ public class JwtUtil {
 	/**
 	 * 創建 jwt token 方法
 	 * 
-	 * @param id        - token 唯一識別碼(通常用 uuid)
-	 * @param subject   - token 主旨
+	 * @param userinfo  - 使用者基本資料 userinfo = { id, identity, name, }
 	 * @param ttlMillis - token 過期時間
 	 * @return jwt 字串，包含 header, payload, signature 三部分
 	 */
-	public String createJWT(String id, String subject, Long ttlMillis) {
+	public String createJWT(Users userinfo, Long ttlMillis) {
 		SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
 		// (1) 取得當前時間戳記
 		long nowMillis = System.currentTimeMillis();
@@ -46,8 +46,16 @@ public class JwtUtil {
 		// (3) 取得加密後的密鑰
 		SecretKey secretKey = generateKey();
 
-		// (4) 創建 jwt(subject 通常用來放使用者 id)
-		return Jwts.builder().setId(id).setSubject(subject).setIssuer("vue3-element-plus-api-server").setIssuedAt(now)
+		// (4) 創建 jwt
+		return Jwts.builder()
+
+				// 標準聲明
+				.setIssuer("vue3-element-plus-api-server").setIssuedAt(now)
+
+				// 自定義聲明
+				.claim("id", userinfo.getId()).claim("name", userinfo.getName()).claim("identity", userinfo.getIdentity())
+
+				// 簽名
 				.signWith(secretKey, signatureAlgorithm).setExpiration(expDate).compact();
 	}
 
@@ -88,8 +96,8 @@ public class JwtUtil {
 		// (1) 設定密鑰，驗證完整性、過期時間及格式，並只取出 payload 的部分
 		Claims claims = Jwts.parserBuilder().setSigningKey(generateKey()).build().parseClaimsJws(token).getBody();
 
-		// (2) 從 payload 中再取出主旨部分並回傳
-		return claims.getSubject();
+		// (2) 從 payload 中再取出自定義 id 的部分並回傳
+		return (String) claims.get("id");
 	}
 
 	/**
